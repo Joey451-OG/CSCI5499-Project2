@@ -52,10 +52,18 @@ public class GunFire : MonoBehaviour
             if (Physics.Raycast(rayOrigin, Camera.main.transform.forward, out hit))
             {
                 SkeletonController skele = hit.collider.GetComponent<SkeletonController>();
+                PumpkinController pumpk = hit.collider.GetComponent<PumpkinController>();
+
                 if (skele != null)
                 {
                     float damage = hit.collider is SphereCollider ? headShotDamage : bodyShotDamage;
                     skele.takeDamage(damage);
+                }
+
+                if (pumpk != null)
+                {
+                    float damage = 1f;
+                    pumpk.takeDamage(damage);
                 }
             }
             gunFire.Play();

@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4696556535343673636
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5ea7a254756e33149aa693abfa1cead3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5ea7a254756e33149aa693abfa1cead3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5ea7a254756e33149aa693abfa1cead3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5ea7a254756e33149aa693abfa1cead3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5ea7a254756e33149aa693abfa1cead3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5ea7a254756e33149aa693abfa1cead3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5ea7a254756e33149aa693abfa1cead3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5ea7a254756e33149aa693abfa1cead3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5ea7a254756e33149aa693abfa1cead3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5ea7a254756e33149aa693abfa1cead3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5ea7a254756e33149aa693abfa1cead3, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6de47420143eca2418d1a4c57e5368f3, type: 2}
+    - target: {fileID: 919132149155446097, guid: 5ea7a254756e33149aa693abfa1cead3, type: 3}
+      propertyPath: m_Name
+      value: Pumpkin_URP
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5ea7a254756e33149aa693abfa1cead3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8336347362300749612}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5ea7a254756e33149aa693abfa1cead3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1752006288487210684}
+  m_SourcePrefab: {fileID: 100100000, guid: 5ea7a254756e33149aa693abfa1cead3, type: 3}
+--- !u!1 &5615122977042451573 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5ea7a254756e33149aa693abfa1cead3, type: 3}
+  m_PrefabInstance: {fileID: 4696556535343673636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &8336347362300749612
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5615122977042451573}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.22621197
+  m_Center: {x: -0.0013781711, y: 0.21917725, z: -0.017135806}
+--- !u!114 &1752006288487210684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5615122977042451573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab311216dfa4d4c45a8b68461095d64c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PumpkinController
+  defaultHP: 1
+  maxHP: 1
