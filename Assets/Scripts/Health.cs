@@ -4,7 +4,9 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] float defaultHP = 100;
-    [SerializeField] float maxHP = 0;  
+    [SerializeField] float maxHP = 0;
+    [SerializeField] public AudioSource nonLethalHit;
+    [SerializeField] public AudioSource lethalHit;
 
     private float _hp;
 
@@ -34,7 +36,12 @@ public class Health : MonoBehaviour
         {
             Debug.Log("DEAD! Health: ");
             Debug.Log(_hp);
+
+            lethalHit.Play();
+            return;
         }
+
+        nonLethalHit.Play();
     }
 
     public float getHP()

@@ -7,7 +7,7 @@ public class PumpkinController : Health
     {
         if (getHP() < 0)
         {
-            Destroy(gameObject);
+            Destroy(gameObject, lethalHit.clip.length);
         }   
     }
 }

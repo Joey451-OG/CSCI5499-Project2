@@ -1,6 +1,7 @@
 using System;
 using StarterAssets;
 using Unity.Cinemachine;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
