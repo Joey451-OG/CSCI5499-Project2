@@ -1,0 +1,3 @@
+Y	Transform all
+G	Face / Global toggle
+
