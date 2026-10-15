@@ -32,5 +32,10 @@ namespace StarterAssets
         {
             StarterAssetsInputs.FireInput(virtualFireState);
         }
+
+        public void VirtualReloadInput(bool virtualReloadState)
+        {
+            StarterAssetsInputs.ReloadInput(virtualReloadState);
+        }
     }
 }

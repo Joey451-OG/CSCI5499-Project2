@@ -7,18 +7,25 @@ using UnityEngine.InputSystem;
 
 public class GunFire : MonoBehaviour
 {
-
-    [SerializeField] AudioSource gunFire;
     [SerializeField] Transform rifleTransform;
+    
+    [Header("Sound Effects")]
+    [SerializeField] AudioSource gunFire;
+    [SerializeField] AudioSource emptyMag;
+    [SerializeField] AudioSource reloadMag;
+
+    [Header("Rifle Stats")]
     [SerializeField] float fireRateInSeconds;
     [SerializeField] float headShotDamage = 100;
     [SerializeField] float bodyShotDamage = 50;
+    [SerializeField] int magazineSize = 30;
 
 #if ENABLE_INPUT_SYSTEM
         private PlayerInput _playerInput;
 #endif
     private StarterAssetsInputs _input;
     private float _nextFire;
+    private int _currentMagazine;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,6 +33,7 @@ public class GunFire : MonoBehaviour
         _input = GetComponent<StarterAssetsInputs>();
         _playerInput = GetComponent<PlayerInput>();
         _nextFire = 0f;
+        _currentMagazine = magazineSize;
     }
 
     // Update is called once per frame
@@ -40,7 +48,7 @@ public class GunFire : MonoBehaviour
 
 
         // Gun firing
-        if (_input.isFiring && Time.time > _nextFire)
+        if (_input.isFiring && _currentMagazine > 0 && Time.time > _nextFire)
         {
             _nextFire = Time.time + fireRateInSeconds;
             // Create a vector at the center of our camera's viewport
@@ -68,6 +76,19 @@ public class GunFire : MonoBehaviour
                 }
             }
             gunFire.Play();
-        }     
+            _currentMagazine--;
+        } else if (_input.isFiring && _currentMagazine == 0 && Time.time > _nextFire)
+        {
+            _nextFire = Time.time + emptyMag.clip.length;
+            emptyMag.Play();
+        }
+
+        if (_input.isReloading && Time.time > _nextFire)
+        {
+            _nextFire = Time.time + reloadMag.clip.length;
+            _currentMagazine = magazineSize;
+            reloadMag.Play();
+        }
+
     }
 }
