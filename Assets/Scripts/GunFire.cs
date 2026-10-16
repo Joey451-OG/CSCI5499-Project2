@@ -65,6 +65,9 @@ public class GunFire : MonoBehaviour
 
                 if (skele != null)
                 {
+                    Rigidbody skeletonRigidbody = skele.GetComponent<Rigidbody>();
+                    skeletonRigidbody.AddForce(Camera.main.transform.forward * skele.impactMagnitude);                  
+
                     float damage = hit.collider is SphereCollider ? headShotDamage : bodyShotDamage;
                     skele.takeDamage(damage);
                 }
