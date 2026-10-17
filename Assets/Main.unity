@@ -46075,7 +46075,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: RotationSpeed
-      value: 1.2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: SpeedChangeRate
@@ -46178,7 +46178,7 @@ MonoBehaviour:
   reloadMag: {fileID: 1698887591}
   fireRateInSeconds: 0.08
   headShotDamage: 20
-  bodyShotDamage: 10
+  bodyShotDamage: 11
   magazineSize: 30
 --- !u!43 &735585171
 Mesh:
