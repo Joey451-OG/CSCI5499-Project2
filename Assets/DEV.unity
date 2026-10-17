@@ -12283,7 +12283,7 @@ MonoBehaviour:
   reloadMag: {fileID: 1266027268}
   fireRateInSeconds: 0.08
   headShotDamage: 20
-  bodyShotDamage: 10
+  bodyShotDamage: 11
   magazineSize: 30
 --- !u!1 &2103610303
 GameObject:

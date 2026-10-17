@@ -441,13 +441,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91ec54b26859667179d4fa80e623adf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  defaultHP: 100
-  maxHP: 0
+  defaultHP: 300
+  maxHP: 300
   nonLethalHit: {fileID: 5242313268375127479}
   lethalHit: {fileID: 734514777608414295}
   headHitBox: {fileID: 1228948695963168726}
   bodyHitBox: {fileID: 386197885414567614}
-  impactMagnitude: 150
+  impactMagnitude: 200
 --- !u!136 &386197885414567614
 CapsuleCollider:
   m_ObjectHideFlags: 0
