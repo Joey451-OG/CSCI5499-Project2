@@ -7,8 +7,7 @@ public class UI : MonoBehaviour
 {
     [SerializeField] CanvasRenderer pumpkinText;
     [SerializeField] CanvasRenderer healthText;
-    [SerializeField] String gameOverText = "GAME OVER";
-    [SerializeField] String deadText = "GAME OVER";
+    [SerializeField] String gameOverText = "YOU WIN!";
     [SerializeField] GameObject deadScreen;
     GameObject[] pumpkins;
     Health _player;
@@ -31,7 +30,7 @@ public class UI : MonoBehaviour
 
         if (pumpkins.Length <= 0)
         {
-            pumpkinText.GetComponent<TextMeshPro>().text = gameOverText;
+            pumpkinText.GetComponent<TMP_Text>().text = gameOverText;
         }
 
         if (_player.getHP() < 0)

@@ -29353,9 +29353,9 @@ Canvas:
   m_GameObject: {fileID: 461474714}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 2111426328}
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -29383,7 +29383,6 @@ MonoBehaviour:
   pumpkinText: {fileID: 1148075278}
   healthText: {fileID: 532867881}
   gameOverText: You Win!
-  deadText: GAME OVER
   deadScreen: {fileID: 1652502906}
 --- !u!222 &461474721
 CanvasRenderer:
@@ -138186,6 +138185,11 @@ GameObject:
 --- !u!4 &2111426324 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
+  m_PrefabInstance: {fileID: 2111426322}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &2111426328 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 9005220659476430821, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
   m_PrefabInstance: {fileID: 2111426322}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2113349448
